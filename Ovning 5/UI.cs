@@ -87,7 +87,7 @@ public class UI : IUI
         Console.WriteLine("6. Search by registration number");
     }
 
-    public void RemoveVehicleFromMenu()
+    private void RemoveVehicleFromMenu()
     {
         Console.Clear();
         string regNoSearchParameter = "";
@@ -136,7 +136,7 @@ public class UI : IUI
         Console.ReadKey();
     }
 
-    public void ListVehiclesFromMenu()
+    private void ListVehiclesFromMenu()
     {
         Console.Clear();
         Console.WriteLine("Vehicles in the garage:");
@@ -172,7 +172,7 @@ public class UI : IUI
         Console.ReadKey();
     }
 
-    public void AddVehicleFromMenu()
+    private void AddVehicleFromMenu()
     {
         int freeSpots = handler.GetFreeSpotsCount();
 
@@ -358,7 +358,7 @@ public class UI : IUI
         return char.ToUpper(input[0]) + input.Substring(1).ToLower();
     }
 
-    public void SearchByRegNoFromMenu()
+    private void SearchByRegNoFromMenu()
     {
         Console.Clear();
         Console.WriteLine("Write the Reg No of the vehicle you are looking for.\n");
@@ -423,7 +423,7 @@ public class UI : IUI
 
 
 
-    public void SearchByPropertiesFromMenu()
+    private void SearchByPropertiesFromMenu()
     {
         Console.Clear();
 
@@ -546,7 +546,7 @@ public class UI : IUI
         Console.ReadKey();
     }
 
-    public void ListVehicleTypesCountFromMenu()
+    private void ListVehicleTypesCountFromMenu()
     {
         Console.Clear();
 

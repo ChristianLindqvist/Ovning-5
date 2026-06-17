@@ -111,7 +111,6 @@ public class Garage<T> : IEnumerable<T>, IGarage<T> where T : class, IVehicle //
         return successfulResults;
     }
 
-
     public IEnumerable<T> SearchByRegNo(string regNo)
     {
         var results = new List<T>();
