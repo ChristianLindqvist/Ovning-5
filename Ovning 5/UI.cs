@@ -172,33 +172,6 @@ public class UI : IUI
         Console.ReadKey();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void AddVehicleFromMenu()
     {
         int freeSpots = handler.GetFreeSpotsCount();
@@ -384,20 +357,6 @@ public class UI : IUI
         if (string.IsNullOrEmpty(input)) return input;
         return char.ToUpper(input[0]) + input.Substring(1).ToLower();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public void SearchByRegNoFromMenu()
     {
@@ -587,10 +546,6 @@ public class UI : IUI
         Console.ReadKey();
     }
 
-
-
-
-
     public void ListVehicleTypesCountFromMenu()
     {
         Console.Clear();
@@ -614,6 +569,4 @@ public class UI : IUI
         Console.WriteLine("Press any key to continue.");
         Console.ReadKey();
     }
-
-
 }

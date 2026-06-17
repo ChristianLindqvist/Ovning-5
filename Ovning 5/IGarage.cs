@@ -2,7 +2,6 @@
 {
     bool AddVehicle(T vehicle);
     IEnumerator<T> GetEnumerator();
-    //void ListVehicleTypesCount();
     bool RemoveVehicle(string regNo);
     IEnumerable<T> SearchByProperties(string type, string color, int wheels, bool emptyWheelSearch);
     int GetFreeSpotsCount();
